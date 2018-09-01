@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ListView
+            android:id ="@+id/listView"
+            android:layout_weight="100"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:divider="@null"
+            android:stackFromBottom="true"
+            android:transcriptMode="alwaysScroll"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"/>
+        <LinearLayout
+            android:id="@+id/llMsgCompose"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <EditText
+                android:id="@+id/new_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:textColor="#666666"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"/>
+
+            <!--<Button
+                android:id="@+id/send_message"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#3F51B5"
+                android:textColor="@color/white"
+                android:text="SEND" />-->
+
+
+            <ImageButton
+                android:id="@+id/send_message"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_send"
+                android:background="#3F51B5"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
